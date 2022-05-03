@@ -1,0 +1,85 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url(../imgs/jv.jpg);
+}
+
+main{
+    padding: 10px;
+    background: url(../imgs/jv.jpg);
+}
+
+h1{ 
+    margin: 0;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #eee;
+    background-color: black;
+}
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 5px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family:Arial, sans-serif;
+    background-color: #fff;
+}
+
+button{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family:Arial, sans-serif;
+    text-transform: uppercase;
+    color: #eee;
+    background: rgb(0, 0, 0);
+}
+
+button:hover{
+    color: black;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.box{
+    font-size: 60px;
+    text-align: center;
+
+    width: 50px;
+    margin: 5px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 3px solid rgb(80, 77, 77);
+
+    color: #eee;
+    background: #eee;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    color: #eee;
+    padding: 10px;
+    margin-top: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    transition: .3s;
+    color: rgb(162, 151, 151);
+}

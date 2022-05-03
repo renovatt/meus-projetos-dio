@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@500;800&family=Press+Start+2P&family=Square+Peg&family=Sriracha&display=swap');
+
+    /*
+    font-family: 'Changa', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Square Peg', cursive;
+    font-family: 'Sriracha', cursive;
+   */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(202, 23, 92) , rgb(71, 26, 92));
+    
+}
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    font-family: 'Changa', sans-serif;
+}
+
+p{
+    font-family: 'Sriracha', cursive;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    background-color: none;
+    color: rgba(25, 14, 236, 0.882);
+}
+
+main{
+    padding: 20px;
+    margin: 0 70px;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #151515;
+
+    position: relative;	
+    border: double 2px transparent;
+    background-image: linear-gradient(white, white), 
+    radial-gradient(circle at top left, #dd2476 , #1c64ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+img:hover{
+    box-shadow: 5px 5px 5px #0006;
+    transition: 0.8s;
+    transform: scale(1.1);
+
+    background-image: linear-gradient(white, white), 
+    radial-gradient(circle at top left,#1c64ff,#dd2476);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.thumb{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(31, 26, 28, 0.164);
+}
+
+footer{
+    font-style: italic;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    transition: .3s;
+    color: rgb(162, 151, 151);
+}
+
+
+/*Media queries*/
+
+@media (max-width: 1033px){
+    
+    .thumb{
+        flex-wrap: wrap;
+    }
+
+    footer{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 664px)
+{
+    .thumb{
+        flex-wrap: wrap;
+    }
+
+    header{
+        margin: 0 10px;
+    }
+
+    footer{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 360px)
+{
+    .thumb{
+        flex-wrap: wrap;
+    }
+
+    header{
+        margin: 0 35px;
+    }
+
+    img{
+        width: 125px;
+        height: 90px;
+    }
+
+    footer{
+        margin-bottom: 20px;
+    }
+}
+
+
+/*
+.card{
+    border: 5px solid;
+    background-color: #151515;
+    border-image: radial-gradient(#ff512f,#dd2476,#1c64ff) 1;
+
+    animation: borda 2.5s ease-in infinite;
+    
+    -webkit-animation: borda 2.5s ease-in infinite;
+    -moz-animation: borda 2.5s ease-in infinite;
+    -ms-animation: borda 2.5s ease-in infinite;
+    -o-animation: borda 2.5s ease-in infinite;
+}*/
+
+/*
+@keyframes borda {
+    50% {
+    background-image: linear-gradient(white, white), 
+    radial-gradient(circle at top left,#1c64ff,#dd2476);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    }
+}
+*/

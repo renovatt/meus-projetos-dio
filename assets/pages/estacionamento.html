@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estacionamento.css">
+    <link rel="shortcut icon" href="../ico/car/favicon.ico" type="image/x-icon">
+    <title>Estacionamento</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Estacionamento</h1>
+    </header>
+
+    <section class="gravacao">
+        <input type="text" id="nome" placeholder="Digite o nome do veículo" autocomplete="off">
+        <input type="text" id="placa" placeholder="Digite a placa do veículo" autocomplete="off">
+        <button id="cadastrar">Cadastrar</button>
+    </section>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Placa</th>
+                    <th>Entrada</th>
+                </tr>
+            </thead>
+            <tbody id="patio">
+            </tbody>
+        </table>
+    </main>
+
+    <script src="../js/estacionamento.js"></script>
+
+    <!--Este arquivo JS foi compilado/transformado pelo TS, eu criei o arquivo TS juntamente com o video e depois transformei o codigo para JS já que o navegador não consegue ler arquivos TS.
+        
+        Seguindo os passos:
+    -cd estacionamento/pasta
+    -npx -p typescript tsc --init (da inicio a um projeto TS criando "tsconfig.json")
+    -depois que criei um arquivo TS 
+    -criei o codigo todo em TS e depois compilei para JS usando: npx -p typescript tsc
+    -->
+
+    <footer>&copy; Criado por <a class="footer" href="https://www.linkedin.com/in/renovatt/">wlymes</a></footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #dad5b7;
+}
+
+header{
+    text-align: center;
+    background-color: #c2b79b;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    padding-top: 10px;
+    color: #665e52;
+    background: #c2b79b;
+}
+
+.gravacao{
+    display: flex;  
+    justify-content: center;
+    background-color: #c2b79b;
+}
+
+#nome, #placa{
+    text-align: center;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 20px;
+    border: 1px solid #665e52;
+}
+
+#cadastrar{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 20px;
+    width: 110px;
+    height: 40px;
+    
+    color: white;
+    background-color: #243757;    
+}
+
+#cadastrar:hover{
+    box-shadow: 5px 5px 5px #0006;
+    background-color: #3a5f6f;
+    transition: all .3s;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+table{
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+    border: 0.1px solid black;
+    box-shadow: 2px 2px 2px #0006;
+}
+
+thead{
+    margin: 5px;
+    padding: 10px;
+    border: 0.1px solid black;
+ }
+
+th{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+}
+
+ tbody{
+    margin: 5px;
+    padding: 5px;
+    border: 0.1px solid black;
+ }
+
+ button{
+    cursor: pointer;
+    
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    
+    color: white;
+    background-color: #243757; 
+ }
+
+ button:hover{
+    box-shadow: 2px 2px 2px #0006;
+    background-color: #3a5f6f;
+    transition: all .3s;
+ }
+
+footer{
+    font-style: italic;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    margin-top: 440px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    transition: .3s;
+    color: rgb(162, 151, 151);
+}
