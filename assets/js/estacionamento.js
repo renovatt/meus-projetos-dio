@@ -17,7 +17,8 @@
             var _a, _b;
             const row = document.createElement("tr");
             row.innerHTML = `
-            <td>${veiculo.nome}</td>
+            <td>${veiculo.cliente}</td>
+            <td>${veiculo.modelo}</td>
             <td>${veiculo.placa}</td>
             <td>${veiculo.entrada}</td>
             <td>
@@ -32,9 +33,9 @@
                 salvar([...ler(), veiculo]);
         }
         function remover(placa) {
-            const { entrada, nome } = ler().find(veiculo => veiculo.placa === placa);
+            const { entrada, cliente } = ler().find(veiculo => veiculo.placa === placa);
             const tempo = calTempo(new Date().getTime() - new Date(entrada).getTime());
-            if (!confirm(`O veículo ${nome} permaneceu por ${tempo}. Deseja encerrar?`))
+            if (!confirm(`O veículo do senhor(a) ${cliente} permaneceu por ${tempo}. Deseja encerrar o cadastro?`))
                 return;
             salvar(ler().filter((veiculo) => veiculo.placa !== placa));
             render();
@@ -50,13 +51,14 @@
     }
     patio().render();
     (_a = $("#cadastrar")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", () => {
-        var _a, _b;
-        const nome = (_a = $("#nome")) === null || _a === void 0 ? void 0 : _a.value;
-        const placa = (_b = $("#placa")) === null || _b === void 0 ? void 0 : _b.value;
-        if (!nome || !placa) {
-            alert("Os campos nome e placaa são obrigatórios");
+        var _a, _b, _c;
+        const cliente = (_a = $("#cliente")) === null || _a === void 0 ? void 0 : _a.value;
+        const modelo = (_b = $("#modelo")) === null || _b === void 0 ? void 0 : _b.value;
+        const placa = (_c = $("#placa")) === null || _c === void 0 ? void 0 : _c.value;
+        if (!cliente || !placa) {
+            alert("Os campos nome e placa são obrigatórios");
             return;
         }
-        patio().adicionar({ nome, placa, entrada: new Date().toISOString() }, true);
+        patio().adicionar({ cliente, modelo, placa, entrada: new Date().toISOString() }, true);
     });
 })();

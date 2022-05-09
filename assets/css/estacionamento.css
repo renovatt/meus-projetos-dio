@@ -1,30 +1,53 @@
 *{
     margin: 0;
     padding: 0;
-    background: #dad5b7;
+    background: #ffff;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
 header{
-    text-align: center;
-    background-color: #c2b79b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px;
+    background-color: #24272A;
+    /*background-color: #c2b79b;*/
 }
 
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    padding-top: 10px;
-    color: #665e52;
-    background: #c2b79b;
+
+    padding-left: 200px;
+    color: #fff;
+    background: #24272A;
+}
+
+.img{
+
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+
+    background-image: url(../imgs/logo_pk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .gravacao{
     display: flex;  
     justify-content: center;
-    background-color: #c2b79b;
+    background-color: #666666;
 }
 
-#nome, #placa{
+#cliente, #modelo, #placa{
     text-align: center;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 8px;
     margin: 20px;
     border: 1px solid #665e52;
@@ -35,7 +58,7 @@ h1{
     font-weight: bold;
 
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 8px;
     margin: 20px;
     width: 110px;
@@ -47,7 +70,7 @@ h1{
 
 #cadastrar:hover{
     box-shadow: 5px 5px 5px #0006;
-    background-color: #3a5f6f;
+    background-color: #27a9e1;
     transition: all .3s;
 }
 
@@ -62,6 +85,7 @@ table{
     margin-top: 10px;
     border: 0.1px solid black;
     box-shadow: 2px 2px 2px #0006;
+    background-color: #7b746bb1;
 }
 
 thead{
@@ -97,7 +121,7 @@ th{
 
  button:hover{
     box-shadow: 2px 2px 2px #0006;
-    background-color: #3a5f6f;
+    background-color: #27a9e1;
     transition: all .3s;
  }
 
@@ -119,3 +143,116 @@ footer a:hover {
     transition: .3s;
     color: rgb(162, 151, 151);
 }
+
+/*Media queries*/
+
+@media (min-width: 1033px){
+    
+    header{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 380px)
+{
+
+    body{
+       margin: 0;
+    }
+
+    header{
+        margin: 0;
+        display: flex;
+        justify-content: left;
+    }
+
+    h1{
+        padding: 5px;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    table{
+        width: 80%;
+    }
+
+    tr th:nth-child(4),
+    td:nth-child(4){
+        display: none;
+    }
+
+    .gravacao{
+        flex-wrap: wrap;
+    }
+
+    #cliente, #modelo, #placa{
+        text-align: center;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 12px;
+        border: 1px solid #665e52;
+    }
+
+    footer{
+        margin-top: 110px;
+    }
+}
+
+@media (max-width: 700px)
+{
+
+    body{
+       margin: 0;
+    }
+
+    header{
+        margin: 0;
+        display: flex;
+        justify-content: left;
+    }
+
+    h1{
+        padding: 5px;
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    table{
+        width: 95%;
+    }
+
+    tr th:nth-child(4),
+    td:nth-child(4){
+        display: none;
+    }
+
+    .gravacao{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #cliente, #modelo, #placa{
+        text-align: center;
+        border-radius: 5px;
+        padding: 8px;
+        margin: 12px;
+        border: 1px solid #665e52;
+    }
+
+    footer{
+        margin-top: 110px;
+    }
+}
+

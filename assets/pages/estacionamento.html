@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,14 @@
 </head>
 <body>
     <header>
+        <div class="img"></div>
         <h1>Cadastro de Estacionamento</h1>
     </header>
 
     <section class="gravacao">
-        <input type="text" id="nome" placeholder="Digite o nome do veículo" autocomplete="off">
-        <input type="text" id="placa" placeholder="Digite a placa do veículo" autocomplete="off">
+        <input type="text" id="cliente" placeholder="Digite o nome do cliente" autocomplete="off" maxlength="16">
+        <input type="text" id="modelo" placeholder="Digite o modelo do veículo" autocomplete="off" maxlength="16">
+        <input type="text" id="placa" placeholder="Digite a placa do veículo" autocomplete="off" maxlength="7">
         <button id="cadastrar">Cadastrar</button>
     </section>
 
@@ -23,9 +25,11 @@
         <table>
             <thead>
                 <tr>
-                    <th>Nome</th>
+                    <th>Cliente</th>
+                    <th>Modelo</th>
                     <th>Placa</th>
                     <th>Entrada</th>
+                    <th>Remover</th>
                 </tr>
             </thead>
             <tbody id="patio">
